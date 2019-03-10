@@ -13468,7 +13468,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> <br>For 'Fresh' catagory products, 'Customer 0' spends very high while other two customers are very similar and spend less. <br> For Milk and Grocery, all three seems to fall under the same segment. <br> Looking at remaining catagories, Customer 1 and 2 are very similar compared to the 0th one.</p>
+<p><strong>Answer:</strong> <br>For 'Fresh' catagory products, 'Customer 0' spends 16225 (&gt; mean) while other two customers are very similar and spend around 3000 approx (&lt;&lt; mean). <br> For Milk and Grocery, all three seems to fall under the same segment. <br> Looking at remaining catagories, Customer 1 and 2 are very similar compared to the 0th one.</p>
 
 </div>
 </div>
@@ -14909,9 +14909,9 @@ Size of good data points after removing outliers :398
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> <br> In total, 72.52% variance is explained by first and second components only.
 <br> 92.79% variance is covered by first four components.
-<br> PC1: Best represents feature "Deteregents_Paper", and to great extent "Milk" and "Grocery".
-<br> PC2: Best represents feature "Frozen" and "Fresh".
-<br> PC3: Best represents feature "Fresh" and "Delicatessen".
+<br> PC1: Best represents feature "Deteregents_Paper", and to great extent "Milk" and "Grocery". As such, detergents papers is a good indicator of spending on Grocery and Milk.
+<br> PC2: Best represents feature "Frozen","Fresh" and "Delicatessen" which are just complements of PC1 features. Hence, together PC1 and PC2 covers all 6 features.
+<br> PC3: Best represents feature "Fresh" and "Delicatessen". A small varinace is also explained by giving opposing weights to these two features where negative weight is given to "Fresh" and positive weight to "Delicatessen".
 <br> PC4: Best represents feature "Frozen".
 <br> PC5: Best represents feature "Milk".
 <br> PC6: Best represents feature "Grocery".
@@ -15649,7 +15649,7 @@ Sample point 2 predicted to be in Cluster 0 (99.88%)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> Changing delivery service from 5 days a week to 3 days a week will mostly affect the customers belonging to <strong>segment 0</strong>. It's because this segment deals with the fresh products and reducing the delivery frequency diretly affects the freshness of products delievered to customers. So, chances are that segment 0 customers will react neagtively to this change while it won't affect much to segment 1 customers.</p>
+<p><strong>Answer:</strong> Changing delivery service from 5 days a week to 3 days a week will mostly affect the customers belonging to <strong>segment 0</strong>. It's because this segment deals with the fresh products and reducing the delivery frequency diretly affects the freshness of products delievered to customers. So, chances are that segment 0 customers will react neagtively to this change while it won't affect much to segment 1 customers.<br> For A/B testing, we can select samples of customers from both segments, and run A/B testing seperately on them to test behaviour of each segment.</p>
 
 </div>
 </div>
