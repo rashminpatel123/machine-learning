@@ -1,2 +1,4 @@
 KMeans
-Guassian Mixture Model (GMM)
+
+Guassian Mixture Model (GMM): 
+1. http://www.aishack.in/tutorials/expectation-maximization-gaussian-mixture-model-mixtures/
